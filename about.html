@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ff7bbf672f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <style>
+
+
+    #items{
+        width:70%;
+        margin:auto;
+       
+
+    }
+
+  </style>
+      <style>
+        #owl-carousel {
+            width: 70%;
+            margin: auto;
+            background-color: rgb(227, 220, 210);
+        }
+
+        .item {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        h3 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+    /* Styles for paragraph elements */
+    p {
+        font-family: Arial, sans-serif;
+        font-size: 1rem; /* Example value, adjust as needed */
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    /* Example media query for adjusting font sizes on smaller screens */
+    @media (max-width: 768px) {
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: .8rem;
+        }
+    }
+
+
+    .logo img {
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  padding-left: 10px;
+}
+.nav-item_x{
+    margin: 0px 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: Poppins-Regular;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #020ef8;
+    margin: 0;
+    transition: all .4s;
+    position: relative;
+  }
+  
+  body {
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .fcontainer {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ficons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .ficons div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .fcontainer a {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #000000;
+    transition: all .4s;
+  }
+  
+  .fcontainer a:focus {
+    outline: none !important;
+  }
+  
+  .fcontainer a:hover {
+    text-decoration: none;
+    color: rgb(2, 128, 255);
+  }
+
+
+
+  .fdiv {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+
+
+
+
+
+@media only screen and (max-width:800px){
+ 
+.ficons div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="logo">
+            <img src="http://www.srkrec.ac.in/idealab/assets/img/logo.png">
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item nav-item_x">
+                <a class="nav-link active" aria-current="page" href="#">Facilities</a>
+              </li>
+              <li class="nav-item nav-item_x">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Training and Workshops</button>
+                  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#">School Programs</a></li>
+                    <li><a class="dropdown-item" href="#">PCB Designing</a></li>
+                    <li><a class="dropdown-item" href="#">IOT Workshop</a></li>
+                    <li><a class="dropdown-item" href="#solid_train">Solid Works Training</a></li>
+                    <li><a class="dropdown-item" href="#">Python & C</a></li>
+                
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-item_x">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Projects</button>
+                  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Demo Projects</a></li>
+                    <li><a class="dropdown-item" href="#">Aqua Projects</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-item_x">
+                <a class="nav-link active" aria-current="page" href="#">Competitions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+
+<div class="about">
+
+    <div id="items">
+        <h3 id="facilitiy">Facilities</h3>
+
+        <p>Our facility boasts top-notch amenities and infrastructure to support innovation and learning. From well-equipped labs to advanced technology, we provide a conducive environment for students to unleash their creativity and bring their ideas to life.</p>
+
+
+    <div class="owl-carousel">
+        <div class="item"><img src="photos/facilities/IMG20220901114610.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901115505.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901115431.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901115021.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901114809.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901115407.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901115505.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901143212.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901115236.jpg" alt=""></div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div id="items">
+        <h3 id="facilitiy">Demo Projects</h3>
+        <p>Witness the power of innovation through our captivating demo projects. These projects showcase the potential of ideas and inspire young minds to think outside the box. Explore our collection of remarkable demo projects that cover a diverse range of fields and ignite your passion for innovation.</p>
+
+
+    <div class="owl-carousel">
+        <div class="item"><img src="photos/facilities/IMG20220901114610.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901115505.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901115431.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901115021.jpg" alt=""></div>
+        <div class="item"><img src="photos/facilities/IMG20220901114809.jpg" alt=""></div>
+      </div>
+
+
+    </div>
+    <div id="items">
+        <h3 id="facilitiy">Aqua Projects</h3>
+        <p>Dive into the world of aqua projects and discover innovative solutions for sustainable aquatic systems. Our aqua projects focus on creating efficient and eco-friendly solutions to address the challenges faced by the aquaculture industry. Explore our aqua projects and witness the impact of technology on aquatic ecosystems.</p>
+
+
+    <div class="owl-carousel">
+      <div class="item"><img src="photos/eyantra/AUTOMATIC PAPER SWEET MACHINE.jpg" alt=""></div>
+      <div class="item"><img src="photos/eyantra/BOARDER SECURITY ROBOT.jpg" alt=""></div>
+      <div class="item"><img src="photos/eyantra/CLIMATE CHANGE AND MONTORING SYSTEM AND CONTROLING SYSTEM - Copy.jpg" alt=""></div>
+      <div class="item"><img src="photos/eyantra/FLOOR CLEANING ROBOT.jpg" alt=""></div>
+      <div class="item"><img src="photos/eyantra/FIRE FIGHTING ROBOT.jpg" alt=""></div>
+      <div class="item"><img src="photos/eyantra/RECIRCUILATING AQUACULTURE SYSTEM.jpg" alt=""></div>
+      <div class="item"><img src="photos/eyantra/SMART HOME.jpg" alt=""></div>
+      </div>
+
+
+
+    </div>
+                      
+                      
+                  
+                      
+                      
+                
+
+    <div id="items">
+        <h3 id="compete_proj">Competitve Projects</h3>
+        <p>Compete and excel in the world of innovation through our competitive projects. These projects provide a platform for students to test their skills, collaborate with peers, and showcase their talent on a national and international level. Join us in pushing the boundaries of innovation and making a mark in the competitive landscape.</p>
+
+        <div class="owl-carousel">
+        <div class="item"><img src="photos/eyantra/COMMUNICATION GLOVE.jpg" alt=""></div>
+        <div class="item"><img src="photos/eyantra/IOT BASED SERVICE ROBOT.jpg" alt=""></div>
+        <div class="item"><img src="photos/eyantra/RECIRCUILATING AQUACULTURE SYSTEM.jpg" alt=""></div>
+        <div class="item"><img src="photos/eyantra/braille translator.jpg" alt=""></div>
+        <div class="item"><img src="photos/eyantra/VOICE BASED WHEEL CHAIR.jpg" alt=""></div>
+        <div class="item"><img src="photos/eyantra/RECIRCUILATING AQUACULTURE SYSTEM.jpg" alt=""></div>
+        <div class="item"><img src="photos/eyantra/LORA TECHNOLOGY BASED HOME AUTOMATION.jpg" alt=""></div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div id="items">
+        <h3 id="iot_train">PCB,IOT &amp; Embedded Systems Workshop Program</h3>
+        <p>Gain expertise in the exciting field of PCB, IoT, and embedded systems through our comprehensive workshop program. Our workshops combine theoretical knowledge with hands-on experience to equip participants with the skills required to design and develop cutting-edge technologies. Join us in exploring the world of PCB, IoT, and embedded systems.</p>
+
+
+    <div class="owl-carousel">
+        <div class="item">    <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.17.15 AM.jpeg" alt=""></div>
+        <div class="item"> <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.18.59 AM.jpeg" alt=""></div>
+        <div class="item"><img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.01 AM (2).jpeg" alt="">
+        </div>
+        <div class="item"><img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.18.59 AM.jpeg" alt=""></div>
+        <div class="item"> <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.17.13 AM.jpeg" alt="">
+        </div>
+        <div class="item"><img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.00 AM.jpeg" alt="">
+        </div>
+        <div class="item"><img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.17.15 AM (1).jpeg" alt=""></div>
+        <div class="item"><img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.17.14 AM (1).jpeg" alt=""></div>
+        <div class="item"><img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.01 AM (1).jpeg" alt=""></div>
+
+      </div>
+
+
+    </div>
+
+
+    <div id="items">
+        <h3 id="pcb_train">Python &amp;C Programming Training Program</h3>
+        <p>Unlock the power of programming with our Python and C programming training program. Whether you're a beginner or an experienced programmer, our program caters to all skill levels. Learn the fundamentals, master programming languages, and enhance your problem-solving abilities through our immersive training program.</p>
+
+    <div class="owl-carousel">
+        <div class="item">   <img src="photos/python/WhatsApp Image 2022-12-19 at 18.25.33 (1).jpeg" alt=""></div>
+        <div class="item"> <img src="photos/python/WhatsApp Image 2022-12-19 at 18.25.33 (2).jpeg" alt=""></div>
+        <div class="item"> <img src="photos/python/WhatsApp Image 2022-12-19 at 18.25.33.jpeg" alt="">
+        </div>
+      </div>
+
+
+    </div>
+
+    
+    <div id="items">
+
+
+        <h3 id="school_train">School Awareness Training Program</h3>
+        <p>Educating young minds about the latest advancements and technological innovations is crucial. Our School Awareness Training Program aims to create awareness and inspire students through interactive sessions and engaging activities. Join us in nurturing the next generation of innovators and technologists.</p>
+
+<div class="owl-carousel">
+    <div class="item"><img src="photos/school/WhatsApp Image 2022-11-17 at 1.17.53 PM.jpeg" alt=""></div>
+    <div class="item"><img src="photos/school/WhatsApp Image 2022-11-17 at 1.18.55 PM (1).jpeg" alt=""></div>
+    <div class="item"><img src="photos/school/WhatsApp Image 2022-11-17 at 12.56.36 PM.jpeg" alt=""></div>
+    <div class="item"><img src="photos/school/WhatsApp Image 2022-11-17 at 12.56.36 PM.jpeg" alt=""></div>
+    <div class="item"> <img src="photos/school/WhatsApp Image 2023-02-06 at 3.54.15 PM.jpeg" alt=""></div>
+    <div class="item"><img src="photos/school/WhatsApp Image 2023-03-15 at 11.04.07 AM.jpeg" alt=""></div>
+    <div class="item"><img src="photos/school/WhatsApp Image 2023-02-06 at 6.41.09 PM.jpeg" alt=""></div>
+    <div class="item"><img src="photos/school/WhatsApp Image 2023-02-06 at 6.40.58 PM.jpeg" alt=""></div>
+    <div class="item"><img src="photos/school/WhatsApp Image 2023-02-06 at 3.54.15 PM.jpeg" alt=""></div>
+    <div class="item">    <img src="photos/school/WhatsApp Image 2022-11-17 at 1.18.57 PM (1).jpeg" alt=""></div>
+  </div>
+  
+</div>
+
+    <div id="items">
+        <h3 id="solid_train">Solid Work Training Program</h3>
+        <p>Experience the world of 3D modeling and design with our Solid Work Training Program. Learn the intricacies of SolidWorks software, enhance your design skills, and explore the possibilities of computer-aided design. Immerse yourself in the world of 3D modeling and unleash your creativity.</p>
+
+    <div class="owl-carousel">
+        <div class="item">    <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.01 AM.jpeg" alt="">
+        </div>
+        <div class="item">  <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.02 AM.jpeg" alt=""></div>
+        <div class="item">        <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.03 AM (1).jpeg" alt="">
+
+        </div>
+        <div class="item"><img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.01 AM.jpeg" alt=""></div>
+        <div class="item"> <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.17.13 AM.jpeg" alt="">
+        </div>
+        <div class="item"><img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.03 AM.jpeg" alt="">
+        </div>
+        <div class="item"> <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.04 AM.jpeg" alt="">
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    
+   
+
+
+</div>
+
+
+
+
+
+
+<footer class="fcontainer">
+    <div class="ficons">
+      <div>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-sharp fa-solid fa-house"></i></a>
+      </div>
+      <p class="copyright">Connect © 2018</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+      <script src="js/jquery.js"></script> <!-- Include jQuery -->
+      <script src="js/owl.carousel.js"></script>
+      <script>
+        $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+    });
+    
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:4,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:false,
+        responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            loop:true
+    
+        },
+        600:{
+            items:2,
+            nav:false,
+            loop:true
+        },
+        1000:{
+            items:4,
+            
+            loop:true
+        }
+    }
+    });
+    
+      </script>
+    
+</body>
+</html>

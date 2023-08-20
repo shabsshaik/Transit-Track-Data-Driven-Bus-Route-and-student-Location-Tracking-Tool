@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <style>
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+
+    .image-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .image-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-card:hover::before {
+      opacity: 1;
+    }
+
+    .image-card figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      font-weight: bold;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .image-card:hover figcaption {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    a {  text-decoration: none;
+      font-family: Poppins-Regular;
+      font-size: 20px;
+      line-height: 1.7;
+      color: #020ef8;
+      margin: 0;
+      transition: all .4s;
+      position: relative;
+  }
+    
+  </style>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+
+  
+
+
+
+ <!-- Stylesheets -->
+ <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="css/docs.theme.min.css">
+
+ <!-- Owl Stylesheets -->
+ <link rel="stylesheet" href="css/owl.carousel.min.css">
+ <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+ <link rel="stylesheet" type="text/css" href="index_style.css">
+
+
+
+  
+</head>
+<body>
+
+  <nav class="nav_bar flexsb">
+    <div class="logo flexcm">
+      <img src="http://www.srkrec.ac.in/idealab/assets/img/logo.png">
+    </div>
+  
+    <div class="nav_menu flexcm">
+      <a href="####" id="hmenu" class="menubar_1 menubar_2"><i class="fa-solid fa-bars"></i></a>
+      <ul class="nav_links flexsa" id="navlink_1">
+        <li class="nav_link"><a href="#facility">Facilities</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects<span class="navbar-toggler-icon"></span> 
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#demo_proj">Demo Projects</a>
+            <a class="dropdown-item" href="#aqua_proj">Aqua Projects</a>
+          </div>
+        </li>
+        <li class="nav_link"><a href="#compete_proj">Competitions</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Training Programs<span class="navbar-toggler-icon"></span> 
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#school_train">School Programs</a>
+            <a class="dropdown-item" href="#pcb_train">PCB Designing</a>
+            <a class="dropdown-item" href="#">IOT Workshop</a>
+            <a class="dropdown-item" href="#">Embedded Systems</a>
+            <a class="dropdown-item" href="#">Web Designing</a>
+            <a class="dropdown-item" href="#">Solid Work</a>
+            <a class="dropdown-item" href="#">Python & C</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+  <section id="demos">
+   
+    <div class="row">
+      
+      <h3 id="facilitiy">Facilities</h3>
+      <div class="large-12 columns">
+        <div class="owl-carousel owl-theme">
+             <img src="photos/facilety/IMG20220901114610.jpg" alt="">
+              <img src="photos/facilety/IMG20220901114809.jpg" alt="">
+              <img src="photos/facilety/IMG20220901115021.jpg" alt="">
+              <img src="photos/facilety/IMG20220901115431.jpg" alt="">
+              <img src="photos/facilety/IMG20220901115505.jpg" alt="">
+        </div></div>
+       
+
+        <h3 id="demo_proj">Demo Projects</h3>
+          <div class="large-12 columns">
+            <div class="owl-carousel owl-theme">
+                  <img src="img/IMG20220901114610.jpg" alt="">
+                  <img src="img/IMG20220901114809.jpg" alt="">
+                  <img src="img/IMG20220901115021.jpg" alt="">
+                  <img src="img/IMG20220901115431.jpg" alt="">
+                  <img src="img/IMG20220901115505.jpg" alt="">
+            </div></div>
+
+            <h3 id="aqua_proj">Aqua Projects</h3>
+            <div class="large-12 columns">
+              <div class="owl-carousel owl-theme">
+                    <img src="photos/aqua photos/IMG20220912173817.jpg" alt="">
+                    <img src="photos/aqua photos/IMG20220913175558.jpg" alt="">
+                    <img src="photos/aqua photos/IMG20220920185121.jpg" alt="">
+                    <img src="photos/aqua photos/IMG20220912174546.jpg" alt="">
+                    <img src="photos/aqua photos/IMG20220913175533.jpg" alt="">
+              </div></div>
+
+              <h3 id="compete_proj">Competitve Projects</h3>
+              <div class="large-12 columns">
+                <div class="owl-carousel owl-theme">
+                  <img src="img/IMG20220901114610.jpg" alt="">
+                      <img src="img/IMG20220901114809.jpg" alt="">
+                      <img src="img/IMG20220901115021.jpg" alt="">
+                      <img src="img/IMG20220901115431.jpg" alt="">
+                      <img src="img/IMG20220901115505.jpg" alt="">
+                </div></div>
+
+                <h3 id="school_train">School Awareness Training Program</h3>
+                <div class="large-12 columns">
+                  <div class="owl-carousel owl-theme">
+                    <img src="img/IMG20220901114610.jpg" alt="">
+                        <img src="img/IMG20220901114809.jpg" alt="">
+                        <img src="img/IMG20220901115021.jpg" alt="">
+                        <img src="img/IMG20220901115431.jpg" alt="">
+                        <img src="img/IMG20220901115505.jpg" alt="">
+                  </div>  </div>
+              
+                  <h3 id="pcb_train">PCB Training Program</h3>
+                  <div class="large-12 columns">
+                    <div class="owl-carousel owl-theme">
+                      <img src="photos/solid and pcb workshops/WhatsApp Image 2023-03-15 at 11.17.11 AM (1).jpeg" alt="">
+                          <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.17.11 AM.jpeg" alt="">
+                          <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.17.12 AM (1).jpeg" alt="">
+                          <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.17.12 AM.jpeg" alt="">
+                          <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.17.13 AM.jpeg" alt="">
+                    </div>    
+                  </div>
+
+                  <h3 id="iot_train">IOT Workshop Program</h3>
+                  <div class="large-12 columns">
+                    <div class="owl-carousel owl-theme">
+                      <img src="img/IMG20220901114610.jpg" alt="">
+                          <img src="img/IMG20220901114809.jpg" alt="">
+                          <img src="img/IMG20220901115021.jpg" alt="">
+                          <img src="img/IMG20220901115431.jpg" alt="">
+                          <img src="img/IMG20220901115505.jpg" alt="">
+                    </div>    
+                  </div>
+
+                  <h3 id="embed_train">Embedded Systems Program</h3>
+                  <div class="large-12 columns">
+                    <div class="owl-carousel owl-theme">
+                      <img src="img/IMG20220901114610.jpg" alt="">
+                          <img src="img/IMG20220901114809.jpg" alt="">
+                          <img src="img/IMG20220901115021.jpg" alt="">
+                          <img src="img/IMG20220901115431.jpg" alt="">
+                          <img src="img/IMG20220901115505.jpg" alt="">
+                    </div>    
+                  </div>
+
+                  <h3 id="web_train">Web Designing Training Program</h3>
+                  <div class="large-12 columns">
+                    <div class="owl-carousel owl-theme">
+                      <img src="img/IMG20220901114610.jpg" alt="">
+                          <img src="img/IMG20220901114809.jpg" alt="">
+                          <img src="img/IMG20220901115021.jpg" alt="">
+                          <img src="img/IMG20220901115431.jpg" alt="">
+                          <img src="img/IMG20220901115505.jpg" alt="">
+                    </div>    
+                  </div>
+
+                  <h3 id="solid_train">Solid Work Training Program</h3>
+                  <div class="large-12 columns">
+                    <div class="owl-carousel owl-theme">
+                      <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.04 AM.jpeg" alt="">
+                          <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.03 AM.jpeg" alt="">
+                          <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.03 AM (1).jpeg" alt="">
+                          <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.02 AM.jpeg" alt="">
+                          <img src="photos/solidwork pcb/WhatsApp Image 2023-03-15 at 11.19.01 AM.jpeg" alt="">
+                    </div>    
+                  </div>
+
+                  <h3 id="c_train">Python & C Programming Languages Training Program</h3>
+                  <div class="large-12 columns">
+                    <div class="owl-carousel owl-theme">
+                      <img src="photos/python/WhatsApp Image 2022-12-19 at 18.25.33 (1).jpeg" alt="">
+                          <img src="photos/python/WhatsApp Image 2022-12-19 at 18.25.33 (2).jpeg" alt="">
+                          <img src="photos/python/WhatsApp Image 2022-12-19 at 18.25.33.jpeg" alt="">
+
+                    </div>    
+                  </div>
+          
+
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script>
+          $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+              items: 4,
+              loop: true,
+              margin: 10,
+              autoplay: true,
+              autoplayTimeout: 1000,
+              autoplayHoverPause: true
+            });
+          })
+        </script>
+    
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  
+  
+<!-- 
+ <div class="image-container">
+    <div class="image-card">
+      <img src="D:\photos\facilety\IMG20220901114610.jpg" alt="Image 1">
+      <figcaption>Description for Image 1</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="D:\photos\facilety\IMG20220901114809.jpg" alt="Image 2">
+      <figcaption>Description for Image 2</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="D:\photos\facilety\IMG20220901114610.jpg" alt="Image 3">
+      <figcaption>Description for Image 3</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="D:\photos\facilety\IMG20220901115021.jpg" alt="Image 4">
+      <figcaption>Description for Image 4</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="D:\photos\facilety\IMG20220901114610.jpg" alt="Image 5">
+      <figcaption>Description for Image 5</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="D:\photos\facilety\IMG20220901114809.jpg" alt="Image 6">
+      <figcaption>Description for Image 6</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="D:\photos\facilety\IMG20220901114610.jpg" alt="Image 7">
+      <figcaption>Description for Image 7</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="D:\photos\facilety\IMG20220901115021.jpg" alt="Image 8">
+      <figcaption>Description for Image 8</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image9.jpg" alt="Image 9">
+      <figcaption>Description for Image 9</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image10.jpg" alt="Image 10">
+      <figcaption>Description for Image 10</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image11.jpg" alt="Image 11">
+      <figcaption>Description for Image 11</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image12.jpg" alt="Image 12">
+      <figcaption>Description for Image 12</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image13.jpg" alt="Image 13">
+      <figcaption>Description for Image 13</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image14.jpg" alt="Image 14">
+      <figcaption>Description for Image 14</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image15.jpg" alt="Image 15">
+      <figcaption>Description for Image 15</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image16.jpg" alt="Image 16">
+      <figcaption>Description for Image 16</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image17.jpg" alt="Image 17">
+      <figcaption>Description for Image 17</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image18.jpg" alt="Image 18">
+      <figcaption>Description for Image 18</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image19.jpg" alt="Image 19">
+      <figcaption>Description for Image 19</figcaption>
+    </div>
+    <div class="image-card">
+      <img src="image20.jpg" alt="Image 20">
+      <figcaption>Description for Image 20</figcaption>
+    </div>
+  </div>  -->
+
+
+
+
+
+<!-- 
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Navbar</title> -->
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>-->
+
+  <!-- Bootstrap JavaScript (optional) 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script> --> 
+</body>
+</html> 
